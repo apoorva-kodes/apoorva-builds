@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Web Application</title>
+  <!-- Tailwind CSS CDN for styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    /* Custom styles and overrides */
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col antialiased">
+
+  <!-- Header / Navigation -->
+  <header class="bg-slate-800/80 border-b border-slate-700 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-cubes text-indigo-400 text-xl"></i>
+        <span class="font-bold text-lg text-white">WebApp Boilerplate</span>
+      </div>
+      <nav class="flex items-center gap-6 text-sm font-medium">
+        <a href="#features" class="hover:text-indigo-400 transition-colors">Features</a>
+        <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+        <a href="#contact" class="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg transition-colors">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="flex-1 max-w-6xl w-full mx-auto px-4 py-12 space-y-12">
+    
+    <!-- Hero Section -->
+    <section class="text-center space-y-4 py-12 bg-slate-800/40 rounded-2xl border border-slate-800 p-8">
+      <span class="px-3 py-1 text-xs font-semibold uppercase tracking-wider bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 rounded-full">Web Application Starter Template</span>
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">Build Something Amazing</h1>
+      <p class="text-slate-400 max-w-2xl mx-auto text-base sm:text-lg">
+        This is a lightweight, structured blank web application repository template ready to be deployed to GitHub Pages.
+      </p>
+      <div class="pt-4 flex justify-center gap-4">
+        <button onclick="handleAppAction()" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-lg shadow-lg shadow-indigo-600/20 transition-all flex items-center gap-2">
+          <i class="fa-solid fa-play text-xs"></i> Run App Action
+        </button>
+      </div>
+    </section>
+
+    <!-- Application Workspace Grid -->
+    <section id="features" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-slate-800/60 border border-slate-700/60 p-6 rounded-xl space-y-3">
+        <div class="w-10 h-10 bg-indigo-500/10 text-indigo-400 rounded-lg flex items-center justify-center font-bold text-lg">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <h3 class="text-lg font-bold text-white">Modular Architecture</h3>
+        <p class="text-slate-400 text-sm">Add your HTML components, styling classes, and JavaScript functions in structured blocks.</p>
+      </div>
+
+      <div class="bg-slate-800/60 border border-slate-700/60 p-6 rounded-xl space-y-3">
+        <div class="w-10 h-10 bg-emerald-500/10 text-emerald-400 rounded-lg flex items-center justify-center font-bold text-lg">
+          <i class="fa-solid fa-bolt"></i>
+        </div>
+        <h3 class="text-lg font-bold text-white">Responsive & Fast</h3>
+        <p class="text-slate-400 text-sm">Pre-configured with Tailwind CSS via CDN for rapid UI development on all screens.</p>
+      </div>
+
+      <div class="bg-slate-800/60 border border-slate-700/60 p-6 rounded-xl space-y-3">
+        <div class="w-10 h-10 bg-purple-500/10 text-purple-400 rounded-lg flex items-center justify-center font-bold text-lg">
+          <i class="fa-solid fa-cloud-arrow-up"></i>
+        </div>
+        <h3 class="text-lg font-bold text-white">GitHub Ready</h3>
+        <p class="text-slate-400 text-sm">Organized to push directly to GitHub and host for free via GitHub Pages.</p>
+      </div>
+    </section>
+
+    <!-- Output Display Area -->
+    <section class="bg-slate-950 border border-slate-800 rounded-xl p-6">
+      <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-2">Application Log / Output</h3>
+      <div id="output-console" class="font-mono text-xs text-emerald-400 bg-slate-900 p-4 rounded-lg border border-slate-800 min-h-[100px] overflow-x-auto">
+        System initialized. Ready for application logic...
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 border-t border-slate-800 py-6 mt-auto text-center text-xs text-slate-500">
+    <p>&copy; <span id="year"></span> Web Application Repository Starter. Hosted on GitHub Pages.</p>
+  </footer>
+
+  <!-- Application Logic JavaScript -->
+  <script>
+    // Set dynamic copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Starter Application Function
+    function handleAppAction() {
+      const consoleBox = document.getElementById('output-console');
+      const timestamp = new Date().toLocaleTimeString();
+      consoleBox.innerHTML += `<br>[${timestamp}] Action triggered successfully! You can customize this function in index.html.`;
+    }
+  </script>
+</body>
+</html>
