@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apoorva's Portfolio</title>
+  <title>My Portfolio</title>
   <!-- Tailwind CSS CDN for styling -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Font Awesome Icons -->
@@ -27,13 +27,11 @@
         <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-emerald-500 to-cyan-500 flex items-center justify-center shadow-md shadow-emerald-500/20">
           <i class="fa-solid fa-code text-slate-950 font-bold text-lg"></i>
         </div>
-        <span class="font-extrabold text-xl text-white tracking-tight">Portfolio Application</span>
       </div>
       
-      <!-- Navigation Links (Features removed, About points to section below boxes) -->
+      <!-- Navigation Links -->
       <nav class="flex items-center gap-8 text-sm font-semibold tracking-wide">
         <a href="#about" class="text-slate-300 hover:text-emerald-400 transition-colors duration-200">About</a>
-        <a href="#contact" class="px-5 py-2.5 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-slate-950 font-bold rounded-xl transition-all shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/30">Get Started</a>
       </nav>
     </div>
   </header>
@@ -46,7 +44,7 @@
       <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
       
       <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-tight">
-        Apoorva's <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">Portfolio</span>
+        My <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">Portfolio</span>
       </h1>
       
       <p class="text-slate-300 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed font-normal">
@@ -64,75 +62,31 @@
     <!-- Application Workspace / Feature Grid -->
     <section id="projects" class="grid grid-cols-1 md:grid-cols-3 gap-8 scroll-mt-28">
       
-      <!-- Box 1 -->
-      <div class="bg-slate-900/80 border border-slate-800 p-8 rounded-2xl shadow-lg hover:border-emerald-500/40 transition-all flex flex-col justify-between accent-glow cursor-pointer">
+      <!-- Curry Chef Game Box -->
+      <a href="./curry-chef/" class="bg-slate-900/80 border border-slate-800 p-8 rounded-2xl shadow-lg hover:border-emerald-500/40 transition-all flex flex-col justify-between accent-glow cursor-pointer block group">
         <div class="space-y-4">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-emerald-500/15 text-emerald-400 rounded-xl flex items-center justify-center font-bold text-xl border border-emerald-500/20">
-              <i class="fa-solid fa-code"></i>
+            <div class="w-10 h-10 bg-emerald-500/15 text-emerald-400 rounded-xl flex items-center justify-center font-bold text-xl border border-emerald-500/20 group-hover:bg-emerald-500/30 transition-colors">
+              <i class="fa-solid fa-utensils"></i>
             </div>
-            <h3 class="text-xl font-bold text-white">Modular Architecture</h3>
+            <h3 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">Curry Chef</h3>
           </div>
           
           <!-- Horizontal Line Divider -->
           <hr class="border-slate-800 border-t-2 my-4">
           
           <div class="space-y-2">
-            <p class="text-slate-200 font-semibold text-sm">Clean & Organized Structure</p>
+            <p class="text-slate-200 font-semibold text-sm">Interactive Browser Game</p>
             <p class="text-slate-400 text-sm leading-relaxed">
-              Add your HTML components, custom classes, and JavaScript functions in structured blocks without external build dependencies.
+              Step into the kitchen and test your culinary skills in this fast-paced curry cooking game!
             </p>
           </div>
         </div>
-      </div>
-
-      <!-- Box 2 -->
-      <div class="bg-slate-900/80 border border-slate-800 p-8 rounded-2xl shadow-lg hover:border-teal-500/40 transition-all flex flex-col justify-between accent-glow cursor-pointer">
-        <div class="space-y-4">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-teal-500/15 text-teal-400 rounded-xl flex items-center justify-center font-bold text-xl border border-teal-500/20">
-              <i class="fa-solid fa-bolt"></i>
-            </div>
-            <h3 class="text-xl font-bold text-white">Responsive & Fast</h3>
-          </div>
-          
-          <!-- Horizontal Line Divider -->
-          <hr class="border-slate-800 border-t-2 my-4">
-          
-          <div class="space-y-2">
-            <p class="text-slate-200 font-semibold text-sm">High-Speed Styling</p>
-            <p class="text-slate-400 text-sm leading-relaxed">
-              Pre-configured with Tailwind CSS via CDN for rapid UI development on smartphones, tablets, and desktop displays.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Box 3 -->
-      <div class="bg-slate-900/80 border border-slate-800 p-8 rounded-2xl shadow-lg hover:border-cyan-500/40 transition-all flex flex-col justify-between accent-glow cursor-pointer">
-        <div class="space-y-4">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-cyan-500/15 text-cyan-400 rounded-xl flex items-center justify-center font-bold text-xl border border-cyan-500/20">
-              <i class="fa-solid fa-cloud-arrow-up"></i>
-            </div>
-            <h3 class="text-xl font-bold text-white">GitHub Ready</h3>
-          </div>
-          
-          <!-- Horizontal Line Divider -->
-          <hr class="border-slate-800 border-t-2 my-4">
-          
-          <div class="space-y-2">
-            <p class="text-slate-200 font-semibold text-sm">Instant Publishing</p>
-            <p class="text-slate-400 text-sm leading-relaxed">
-              Organized to push directly to GitHub and host for free worldwide using GitHub Pages with continuous deployment.
-            </p>
-          </div>
-        </div>
-      </div>
+      </a>
 
     </section>
 
-    <!-- About Section (Placed directly below the 3 boxes) -->
+    <!-- About Section (Placed directly below the projects) -->
     <section id="about" class="bg-slate-900/90 border border-slate-800 p-10 rounded-3xl shadow-xl space-y-6 scroll-mt-28">
       <div class="flex items-center gap-3">
         <div class="w-10 h-10 bg-blue-500/15 text-blue-400 rounded-xl flex items-center justify-center font-bold text-xl border border-blue-500/20">
